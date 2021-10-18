@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 150px;
+    height: 46.8px;
+  }
+}
