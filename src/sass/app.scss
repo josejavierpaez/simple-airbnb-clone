@@ -1,2 +1,24 @@
-// import compoonent files
-@import './components/app';
+//import abstract files
+@import './abstract/variables';
+
+//import core files
+@import './core/typography';
+
+// import components files
+@import './components/searchInput';
+@import './components/navBar';
+
+//import layout files
+@import './layout/header';
+
+//import sections files
+@import './sections/wrapper';
+
+//import page files
+@import './page/pages';
+
+* {
+  font-family: $open-sans;
+  margin: 0;
+  padding: 0;
+}
