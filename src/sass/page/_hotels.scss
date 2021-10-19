@@ -1,0 +1,26 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  p{
+    font-size: 33px ;
+    font-weight: $bold;
+  }
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1255px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+}

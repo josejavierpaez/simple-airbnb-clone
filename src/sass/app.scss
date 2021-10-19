@@ -7,6 +7,7 @@
 // import components files
 @import './components/searchInput';
 @import './components/navBar';
+@import './components/card';
 
 //import layout files
 @import './layout/header';
@@ -15,10 +16,11 @@
 @import './sections/wrapper';
 
 //import page files
-@import './page/pages';
+@import './page/hotels';
 
 * {
   font-family: $open-sans;
   margin: 0;
   padding: 0;
 }
+
