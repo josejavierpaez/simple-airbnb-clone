@@ -4,8 +4,38 @@
   height: 80px;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px !important;
   img {
     width: 150px;
     height: 46.8px;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 150px;
+      height: 46.8px;
+    }
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    img {
+      margin: 10px 0;
+      width: 150px;
+      height: 46.8px;
+    }
   }
 }

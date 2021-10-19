@@ -3,9 +3,9 @@ import logo from '../../assets/svg/logo.svg';
 import {SearchInput} from '../searchInput/SearchInput';
 export const NavBar = () => {
   return (
-    <div className='wrapper navbar'>
+    <div className='navbar'>
       <img src={logo} alt='logo web' />
-      <SearchInput/>
+      <SearchInput />
     </div>
   );
 };
