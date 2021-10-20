@@ -1,0 +1,27 @@
+.footer {
+  background-color: $black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 65px 0;
+
+  p {
+    color: $white;
+    font-size: 18px;
+    font-weight: $regular;
+
+    i {
+      color: $pink;
+      font-size: 24px;
+      margin: 0 7px;
+    }
+    .fa-github {
+      color: $white;
+    }
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
