@@ -5,8 +5,8 @@ export const Footer = () => {
     <div className='footer'>
       <div className='footer-fr'>
         <p>
-          Made with<i class='fa-solid fa-heart'></i>By{' '}
-          <i class='fa-brands fa-github'></i>
+          Made with<i className='fa-solid fa-heart'></i>By{' '}
+          <i className='fa-brands fa-github'></i>
           <a
             href='https://github.com/josejavierpaez'
             target='_blank'

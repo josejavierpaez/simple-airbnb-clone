@@ -1,7 +1,9 @@
 import React from 'react';
 import {Wrapper} from '../components/wrapper/Wrapper';
 import {Card} from '../components/card/Card';
+import {hotels} from '../data/hotels';
 export const Hotels = () => {
+
   return (
     <>
       <Wrapper>
@@ -9,8 +11,8 @@ export const Hotels = () => {
           <p>Stays in Finland</p>
         </div>
         <div className='card-container'>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => (
-            <Card />
+          {hotels.map((hotel) => (
+            <Card hotel={hotel}  key={hotel.id}/>
           ))}
         </div>
       </Wrapper>

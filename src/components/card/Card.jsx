@@ -1,37 +1,52 @@
 import React from 'react';
-import hotel from '../../assets/img/hotel.png';
+import PropTypes from 'prop-types';
 import start from '../../assets/svg/star.svg';
-export const Card = () => {
+export const Card = ({hotel = {}}) => {
   return (
     <>
       <div className='card'>
-        <img src={hotel} alt='hotel' />
+        <img src={hotel.photo} alt='hotel' />
 
         <div className='place-description'>
           <div className='place-header'>
-            <p className='host'>super host</p>
+            <p className='host'>{hotel.superHost? 'super host' : 'host'}</p>
             <p>
-              <span>Entire House</span>
+              <span>{hotel.type}</span>
             </p>
             <div className='rating'>
-              <img src={start} alt='' />
+              <img src={start} alt='' loading='lazy'/>
               <p>5</p>
             </div>
           </div>
 
           <div className='place-body'>
             <p>
-              Hotel name: <span>Hotel Salinas</span>
+              Hotel name: <span>{hotel.hotelName}</span>
             </p>
             <p>
-              City: <spand>Bani</spand>
+              City: <span>{hotel.city}</span>
             </p>
             <p>
-              Country: <span>Republica Dominicana</span>
+              Country: <span>{hotel.country}</span>
             </p>
           </div>
         </div>
       </div>
     </>
   );
+};
+
+Card.propTypes = {
+  hotel: PropTypes.shape({
+    id: PropTypes.number,
+    city: PropTypes.string.isRequired,
+    hotelName: PropTypes.string,
+    superHost: PropTypes.bool,
+    title: PropTypes.string,
+    rating: PropTypes.number,
+    maxGuests: PropTypes.number,
+    type: PropTypes.string,
+    bebs: PropTypes.number,
+    coments: PropTypes.array,
+  }).isRequired,
 };
